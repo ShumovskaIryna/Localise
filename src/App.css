@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+ul {
+  position: relative;
+  display: inline-block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  display:block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  background: #ffffff;
+  transition: all ease 300ms;
+
+  color: aqua;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header {
+  position: relative;
+  width: 100vw;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+
+  color: aqua;
+}
+
+.categories {
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  width: 234px;
+  height: 56px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 40px 0px 0px 90px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-style: none;
+
+  color: aqua;
 }
 
-.App-link {
-  color: #61dafb;
+.element {
+  display: inline;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 20px;
+
+  position: static;
+  width: 70px;
+  height: 60px;
+  left: 0px;
+  bottom: 2px;
+
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.element:active {
+  border-style: none;
+  border-bottom: 2px solid #5ece7b;
+  text-decoration: #5ece7b;
+}
+.element:hover {
+  border-style: none;
+  border-bottom: 2px solid #5ece7b;
+}
+
+p {
+  position: relative;
+  left: 101px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 160%;
+
+  display: flex;
+  align-items: center;
+
+  color: #1d1f22;
+}
+
+.lang {
+  position: relative;
+  float: right;
+  right: 30px;
+  background-color: #fafafa;
+  box-shadow: 3px 2px 7px 1px lightgrey;
+}
+
+.item {
+  width: 600px;
+  height: 300px;
+  margin: 20px;
 }
